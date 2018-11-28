@@ -1,0 +1,107 @@
+body {
+    width: 100%;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "header"
+    "main";
+}
+
+header {
+    background-color: #0f0f42;
+    color: white;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "headings"
+    "image";
+}
+header h2 {
+    font-size: 18px;
+    font-family: monospace;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    text-align: left;
+    margin: 10px 0px;
+}
+li b {
+    color: #070730;
+    font-size: 22px;
+}
+
+#title {
+    grid-area: headings;
+    text-align: center;
+    font-family: Helvetica, monospace;
+}
+
+#img-div {
+    width: 100%;
+    background-color: #bebebe;
+    margin-bottom: 0%;
+    grid-area: image;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+#img-caption {
+    font-size: 16px;
+    color:  #0b0b3a;
+}
+
+#main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas: 
+    "tribute-info"
+    "quotes"
+    "more-info";
+    background-color: #f0f8ff;
+}
+.bio-intro {
+    font-size: 22px;
+}
+#tribute-info {
+    justify-self: center;
+    text-align: center;
+    background-color: inherit;
+    grid-area: tribute-info;
+    width: 65%;
+}
+
+.qoutes {
+    background-color: #a9743633;
+    color:  rgb(104, 10, 10);
+    grid-area: quotes;
+    text-align: center;
+    border-top: #070730 1px solid;
+}
+.more-info {
+    background-color: #744c1f33;
+    color:  rgb(104, 10, 10);
+    grid-area: more-info;
+    text-align: center;
+    border-top: #070730 1px solid;
+    border-bottom: #070730 2px solid;
+}
+.referrence {
+    color: rgb(63, 63, 63);
+    font-size: 16px;
+    font-style: italic;
+}
